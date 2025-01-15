@@ -69,4 +69,9 @@ snakemake --snakefile /N/slate/ealamb/GSF2183/sailor/workflow_sailor/Snakefile -
 python3 annotator.sailor.py --gtf c_elegans.PRJNA13758.WS275.canonical_geneset.gtf --fwd GSF2183WTmerged.bam.fwd.readfiltered.formatted.varfiltered.snpfiltered.ranked.bed --rev GSF2183WTmerged.bam.rev.readfiltered.formatted.varfiltered.snpfiltered.ranked.bed --wb c.elegans.WS275.annotation.final.bed --o /N/slate/ealamb/GSF2183/sailor/WTmerged.annotated.sites.csv
 python3 annotator.sailor.py --gtf c_elegans.PRJNA13758.WS275.canonical_geneset.gtf --fwd GSF21836merged.bam.fwd.readfiltered.formatted.varfiltered.snpfiltered.ranked.bed --rev GSF21836merged.bam.rev.readfiltered.formatted.varfiltered.snpfiltered.ranked.bed --wb c.elegans.WS275.annotation.final.bed --o /N/slate/ealamb/GSF2183/sailor/6merged.annotated.sites.csv
 
+
+python3 newannotator.py --gtf c_elegans.PRJNA13758.WS275.canonical_geneset.gtf --fwd GSF2183WTmerged.bam.fwd.readfiltered.formatted.varfiltered.snpfiltered.ranked.bed --rev GSF2183WTmerged.bam.rev.readfiltered.formatted.varfiltered.snpfiltered.ranked.bed --wb c.elegans.WS275.annotation.final.bed --o /N/slate/ealamb/GSF2183/sailor/newannotationWTmerged.annotated.sites.csv
+python3 newannotator.py --gtf c_elegans.PRJNA13758.WS275.canonical_geneset.gtf --fwd GSF21836merged.bam.fwd.readfiltered.formatted.varfiltered.snpfiltered.ranked.bed --rev GSF21836merged.bam.rev.readfiltered.formatted.varfiltered.snpfiltered.ranked.bed --wb c.elegans.WS275.annotation.final.bed --o /N/slate/ealamb/GSF2183/sailor/newannotation6merged.annotated.sites.csv
+
+
 scp ealamb@quartz.uits.iu.edu:/N/slate/ealamb/GSF1440_1/results/flareM205/*.csv ~/Desktop/
